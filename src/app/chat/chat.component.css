@@ -1,0 +1,103 @@
+/* ==============================
+   HEADER
+   ============================== */
+
+.chat-header {
+    height: 72px;
+    padding: 0 28px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+/* Robot icon */
+
+.bot-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+/* Title area */
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 650;
+    color: #111827;
+}
+
+
+/* ==============================
+   ONLINE STATUS
+   ============================== */
+
+.online-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+.online-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 3px #dcfce7;
+}
+
+.voice-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f3f4f6;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.voice-button:hover {
+    background: #e5e7eb;
+}
+
+.voice-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.send-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+}

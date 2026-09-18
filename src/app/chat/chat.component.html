@@ -1,0 +1,52 @@
+<div class="chat-container">
+
+    <div class="header-title">
+        <h2>🤖 Active AI</h2>
+        <div class="online-status">
+            <span class="online-dot"></span> Online
+        </div>
+    </div>
+
+    <div class="chat-messages">
+
+        <div *ngFor="let message of messages" class="message" [ngClass]="{
+                'user-message': message.role === 'user',
+                'ai-message': message.role === 'assistant'
+            }">
+
+            <strong>
+                {{ message.role === 'user' ? 'You' : 'Active AI' }}:
+            </strong>
+
+            <p>{{ message.content }}</p>
+
+        </div>
+
+        <div *ngIf="isLoading" class="message ai-message">
+
+            <strong>Active AI:</strong>
+
+            <p>Thinking...</p>
+
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input type="text" placeholder="Message Active AI..." [(ngModel)]="userMessage" (keyup.enter)="sendMessage()" [disabled]="isLoading">
+
+        <button type="button" class="voice-button" (click)="startVoiceInput()" [disabled]="isLoading">
+
+    {{ isListening ? '🔴' : '🎤' }}
+
+  </button>
+
+        <button type="button" class="send-button" (click)="sendMessage()" [disabled]="isLoading || !userMessage.trim()">
+
+    ➤
+
+  </button>
+
+    </div>
+</div>
