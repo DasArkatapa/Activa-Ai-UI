@@ -1,4 +1,18 @@
 # ActivaAiUi
+Activa AI UI is an interactive Angular-based frontend for the Activa AI agentic assistant. It provides a responsive chat interface that communicates with the Python/FastAPI backend through REST APIs, supports real-time conversation updates, conversation IDs, loading indicators, voice input, and Markdown-formatted AI responses.
+
+Key Features
+Angular 15 & TypeScript
+Interactive AI chat interface
+REST API integration with FastAPI backend
+Conversation ID-based chat sessions
+Dynamic user and AI messages
+Loading/typing indicators
+Voice input using browser Speech Recognition
+Markdown rendering for AI responses
+Responsive and modern chat UI
+Error handling for API failures
+CORS-enabled backend integration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
